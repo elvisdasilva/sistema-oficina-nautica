@@ -11,6 +11,7 @@ import { map, shareReplay } from 'rxjs/operators';
 import { MenuComponent } from '../menu/menu.component';
 import { CustomerComponent } from '../customer/customer.component';
 import { RouterOutlet } from '@angular/router';
+import { DashboardComponent } from '../dashboard/dashboard.component';
 
 @Component({
   selector: 'app-home',
@@ -26,6 +27,7 @@ import { RouterOutlet } from '@angular/router';
     AsyncPipe,
     MenuComponent,
     CustomerComponent,
+    DashboardComponent,
     RouterOutlet,
   ],
 })
