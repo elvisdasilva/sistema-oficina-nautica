@@ -13,10 +13,6 @@ import { MatButtonModule } from '@angular/material/button';
     .full-width-table {
       width: 100%;
     }
-    .m-10 {
-      margin: 10px;
-    }
-    
   `,
   standalone: true,
   imports: [MatTableModule, MatPaginatorModule, MatSortModule, MatCardModule, MatButtonModule]
