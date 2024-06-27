@@ -26,7 +26,7 @@ export class MenuComponent {
       label: 'Dashboard',
     },
     {
-      path: 'customer/',
+      path: 'customer',
       label: 'Clientes',
     },
     {
