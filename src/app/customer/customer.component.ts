@@ -3,6 +3,8 @@ import { MatTableModule, MatTable } from '@angular/material/table';
 import { MatPaginatorModule, MatPaginator } from '@angular/material/paginator';
 import { MatSortModule, MatSort } from '@angular/material/sort';
 import { CustomerDataSource, CustomerItem } from './customer-datasource';
+import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
 
 @Component({
   selector: 'app-customer',
@@ -11,10 +13,13 @@ import { CustomerDataSource, CustomerItem } from './customer-datasource';
     .full-width-table {
       width: 100%;
     }
+    .m-10 {
+      margin: 10px;
+    }
     
   `,
   standalone: true,
-  imports: [MatTableModule, MatPaginatorModule, MatSortModule]
+  imports: [MatTableModule, MatPaginatorModule, MatSortModule, MatCardModule, MatButtonModule]
 })
 export class CustomerComponent implements AfterViewInit {
   @ViewChild(MatPaginator) paginator!: MatPaginator;
